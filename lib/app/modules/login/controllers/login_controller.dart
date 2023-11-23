@@ -1,11 +1,20 @@
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
 class LoginController extends GetxController {
-  //TODO: Implement LoginController
 
-  final count = 0.obs;
+  final GlobalKey loginkey = GlobalKey<FormState>();
+
+  late TextEditingController loginemailcontroller,loginpasswordcontroller;
+
+  var loginemail = "";
+  var Loginpassword = "";
+
+
   @override
   void onInit() {
+     loginemailcontroller = TextEditingController();
+     loginpasswordcontroller = TextEditingController();
     super.onInit();
   }
 
@@ -17,7 +26,22 @@ class LoginController extends GetxController {
   @override
   void onClose() {
     super.onClose();
+    loginpasswordcontroller.clear();
+    loginemailcontroller.clear();
   }
 
-  void increment() => count.value++;
+  String? validatoremail(value){
+    if(!GetUtils.isEmail(value)){
+      return "Provide valid email";
+    }
+    return null;
+  }
+
+  String? validatorpassword(value){
+    if(value.length<=6){
+      return "Password must be 6 characters";
+    }
+    return null;
+  }
+
 }

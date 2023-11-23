@@ -7,6 +7,9 @@ class AppString{
    static const online_store = "Online Store";
 
    static const logintext = "Login";
+   static const emailtext = "Email";
+   static const passwordtext = "Password";
+
 
 
 
