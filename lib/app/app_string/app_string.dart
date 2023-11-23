@@ -6,6 +6,8 @@ class AppString{
    static const splashscreen = "Love Shopping";
    static const online_store = "Online Store";
 
+   static const logintext = "Login";
+
 
 
 }

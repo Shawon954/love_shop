@@ -18,7 +18,7 @@ class SplashView extends GetView<SplashController> {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     Future.delayed(Duration(),()=>Get.offAllNamed(Routes.onbording));
-    return BacroundScaffold(
+    return BackoundScaffold(
          extendBody: true,
       body: Center(
         child: Column(

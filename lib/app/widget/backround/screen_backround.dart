@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class BacroundScaffold extends StatelessWidget {
+class BackoundScaffold extends StatelessWidget {
 
   final body;
   final backroundColor;
@@ -8,7 +8,7 @@ class BacroundScaffold extends StatelessWidget {
   final bottomSheet;
   final bottomNavigationBar;
 
-  BacroundScaffold({super.key, this.body, this.backroundColor, this.extendBody, this.bottomSheet, this.bottomNavigationBar});
+  BackoundScaffold({super.key, this.body, this.backroundColor, this.extendBody, this.bottomSheet, this.bottomNavigationBar});
 
   @override
   Widget build(BuildContext context) {
