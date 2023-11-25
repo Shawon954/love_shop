@@ -4,6 +4,8 @@ import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
 import '../modules/onbording/bindings/onbording_binding.dart';
 import '../modules/onbording/views/onbording_view.dart';
+import '../modules/signup/bindings/signup_binding.dart';
+import '../modules/signup/views/signup_view.dart';
 import '../modules/splash/bindings/splash_binding.dart';
 import '../modules/splash/views/splash_view.dart';
 
@@ -27,8 +29,13 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.login,
-      page: () =>  LoginView(),
+      page: () => LoginView(),
       binding: LoginBinding(),
+    ),
+    GetPage(
+      name: _Paths.signup,
+      page: () => SignupView(),
+      binding: SignupBinding(),
     ),
   ];
 }

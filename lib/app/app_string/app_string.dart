@@ -12,7 +12,10 @@ class AppString{
    static const forgotpassword = "Forgot Password?";
    static const or = " or ";
    static const donthave = "Don't have an account? ";
+   static const alrady = "Already have an account? ";
    static const signup = " Sign Up";
+   static const username = "User Name";
+   static const phonenumber = "Phone number";
 
 
 
