@@ -9,6 +9,7 @@ class Product {
   final double discount;
   final int price;
   final int stock;
+  final List images;
   final double rating;
   final String thumbanil;
   final String title;
@@ -21,6 +22,7 @@ class Product {
     required this.discount,
     required this.price,
     required this.stock,
+    required this.images,
     required this.rating,
     required this.thumbanil,
     required this.title,
@@ -38,6 +40,7 @@ class Product {
         discount: data['discount'],
         price: data['price'],
         stock: data['stock'],
+        images: data['images'],
         rating: data['rating'],
         thumbanil: data['thumbanil'],
         title: data['title']);

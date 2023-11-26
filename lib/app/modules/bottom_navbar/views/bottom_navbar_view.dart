@@ -45,7 +45,8 @@ class BottomNavbarView extends GetView<BottomNavbarController> {
                   icon:  ImageIcon(
                       AssetImage(AppImage.passionoutlineicon)),
                   title: Text("Fav")
-              ),SalomonBottomBarItem(
+              ),
+              SalomonBottomBarItem(
                   selectedColor:AppColor.buttoncolor,
                   icon: ImageIcon(
                       AssetImage(AppImage.avatericon)),
