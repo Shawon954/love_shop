@@ -19,6 +19,7 @@ class SignupController extends GetxController {
   var signupemail  = " ";
   var signuppassword = " ";
 
+  var isloading = false.obs;
 
 
 

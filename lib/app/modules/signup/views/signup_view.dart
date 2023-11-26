@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -16,8 +17,8 @@ import '../controllers/signup_controller.dart';
 class SignupView extends GetView<SignupController> {
 
 
+  SignupView({Key? key}) : super(key: key);
 
-   SignupView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery
@@ -35,13 +36,13 @@ class SignupView extends GetView<SignupController> {
                 SizedBox(
                   height: BaseSize.Space_20,
                 ),
-                
+
                 Padding(
                   padding: const EdgeInsets.only(left: BaseSize.Space_12),
                   child: Align(
                     alignment: Alignment.topLeft,
                     child: IconButton(
-                        onPressed: (){
+                        onPressed: () {
                           Get.back();
                         },
                         icon: Icon(Icons.arrow_back)),
@@ -95,19 +96,20 @@ class SignupView extends GetView<SignupController> {
                           controller: controller.signupusernamecontroller,
                           keyboardType: TextInputType.text,
 
-                          onSaved: (val){
-
+                          onSaved: (val) {
                             controller.signupusername = val!;
                           },
-                          validator: (val){
-                            return controller.validatorname (val!);
+                          validator: (val) {
+                            return controller.validatorname(val!);
                           },
                           decoration: InputDecoration(
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
                             ),
                             hintText: "Enter your name",
-                            hintStyle: textStyle(fontsize: 12.sp,fontWidget: FontWeight.w400,color:AppColor.textDark40),
+                            hintStyle: textStyle(fontsize: 12.sp,
+                                fontWidget: FontWeight.w400,
+                                color: AppColor.textDark40),
                             prefixIcon: Icon(
                               Icons.person,
                               color: AppColor.primaryLighter,
@@ -148,19 +150,20 @@ class SignupView extends GetView<SignupController> {
                           controller: controller.signupnumbercontroller,
                           keyboardType: TextInputType.number,
 
-                          onSaved: (val){
-
-                            controller.signupnumber =val!;
+                          onSaved: (val) {
+                            controller.signupnumber = val!;
                           },
-                          validator: (val){
-                            return controller.validatorphonenumber (val!);
+                          validator: (val) {
+                            return controller.validatorphonenumber(val!);
                           },
                           decoration: InputDecoration(
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
                             ),
                             hintText: "Enter your phone number",
-                            hintStyle: textStyle(fontsize: 12.sp,fontWidget: FontWeight.w400,color:AppColor.textDark40),
+                            hintStyle: textStyle(fontsize: 12.sp,
+                                fontWidget: FontWeight.w400,
+                                color: AppColor.textDark40),
                             prefixIcon: Icon(
                               Icons.phone,
                               color: AppColor.primaryLighter,
@@ -201,19 +204,20 @@ class SignupView extends GetView<SignupController> {
                           controller: controller.signupemailcontroller,
                           keyboardType: TextInputType.emailAddress,
 
-                          onSaved: (val){
-
-                            controller.signupemail =val!;
+                          onSaved: (val) {
+                            controller.signupemail = val!;
                           },
-                          validator: (val){
-                            return controller.validatoremail (val!);
+                          validator: (val) {
+                            return controller.validatoremail(val!);
                           },
                           decoration: InputDecoration(
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10),
                             ),
                             hintText: "Enter your email",
-                            hintStyle: textStyle(fontsize: 12.sp,fontWidget: FontWeight.w400,color:AppColor.textDark40),
+                            hintStyle: textStyle(fontsize: 12.sp,
+                                fontWidget: FontWeight.w400,
+                                color: AppColor.textDark40),
                             prefixIcon: Icon(
                               Icons.email,
                               color: AppColor.primaryLighter,
@@ -257,10 +261,10 @@ class SignupView extends GetView<SignupController> {
                             keyboardType: TextInputType.text,
                             cursorColor: AppColor.textDark80,
                             autocorrect: true,
-                            onSaved: (value){
-                              controller.signuppassword= value!;
+                            onSaved: (value) {
+                              controller.signuppassword = value!;
                             },
-                            validator: (val){
+                            validator: (val) {
                               return controller.validatorpassword(val!);
                             },
                             decoration: InputDecoration(
@@ -269,7 +273,9 @@ class SignupView extends GetView<SignupController> {
                               ),
 
                               hintText: "Enter your password",
-                              hintStyle: textStyle(fontsize: 12.sp,fontWidget: FontWeight.w400,color:AppColor.textDark40),
+                              hintStyle: textStyle(fontsize: 12.sp,
+                                  fontWidget: FontWeight.w400,
+                                  color: AppColor.textDark40),
                               suffixIcon: Obx(() {
                                 return IconButton(
                                     onPressed: () {
@@ -299,8 +305,9 @@ class SignupView extends GetView<SignupController> {
                             ),
                           );
                         }),
+
                         SizedBox(
-                          height: BaseSize.Space_15,
+                          height: BaseSize.Space_25,
                         ),
                         Center(
                           child: Button(
@@ -334,7 +341,7 @@ class SignupView extends GetView<SignupController> {
                             Text(
                               AppString.or,
                               style: textStyle(
-                                fontsize: 18.sp,
+                                fontsize: 14.sp,
                                 fontWidget: FontWeight.w500,
                                 color: AppColor.textDark70,
                               ),
@@ -384,24 +391,24 @@ class SignupView extends GetView<SignupController> {
                           height: BaseSize.Space_15,
                         ),
                         Center(
-                          child: GestureDetector(
-                            onTap: () => Get.back(),
-                            child: RichText(
-                                text: TextSpan(
-                                    text: AppString.alrady,
-                                    style: textStyle(
-                                        fontsize: 12.sp,
-                                        color: AppColor.textDark40,
-                                        fontWidget: FontWeight.w500),
-                                    children: [
-                                      TextSpan(
-                                          text: AppString.logintext,
-                                          style: textStyle(
-                                              fontsize: 14.sp,
-                                              color: AppColor.textDark70,
-                                              fontWidget: FontWeight.w500)),
-                                    ])),
-                          ),
+                          child: RichText(
+                              text: TextSpan(
+                                  text: AppString.alrady,
+                                  style: textStyle(
+                                      fontsize: 12.sp,
+                                      color: AppColor.textDark40,
+                                      fontWidget: FontWeight.w500),
+                                  children: [
+                                    TextSpan(
+                                        recognizer: TapGestureRecognizer()
+                                          ..onTap = () =>
+                                              Get.toNamed(Routes.login),
+                                        text: AppString.logintext,
+                                        style: textStyle(
+                                            fontsize: 14.sp,
+                                            color: AppColor.textDark70,
+                                            fontWidget: FontWeight.w500)),
+                                  ])),
                         ),
                         SizedBox(
                           height: BaseSize.Space_15,
