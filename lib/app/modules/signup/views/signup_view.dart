@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:get/get.dart';
+import 'package:love_shop/app/routes/app_pages.dart';
 
 import '../../../app_color/app_colors.dart';
 import '../../../app_image/appimage.dart';
@@ -298,24 +299,8 @@ class SignupView extends GetView<SignupController> {
                             ),
                           );
                         }),
-
                         SizedBox(
-                          height: BaseSize.Space_5,
-                        ),
-                        Align(
-                          alignment: Alignment.centerRight,
-                          child: TextButton(
-                              onPressed: () {},
-                              child: Text(
-                                AppString.forgotpassword,
-                                style: textStyle(
-                                  fontWidget: FontWeight.w400,
-                                  fontsize: 14.sp,
-                                ),
-                              )),
-                        ),
-                        SizedBox(
-                          height: BaseSize.Space_8,
+                          height: BaseSize.Space_15,
                         ),
                         Center(
                           child: Button(
@@ -330,6 +315,7 @@ class SignupView extends GetView<SignupController> {
                             ),
                             onPressed: () {
                               controller.checksignup();
+                              Get.toNamed(Routes.BOTTOM_NAVBAR);
                             },
                           ),
                         ),

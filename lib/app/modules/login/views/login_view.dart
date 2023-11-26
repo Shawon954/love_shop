@@ -208,6 +208,7 @@ class LoginView extends GetView<LoginController> {
                             ),
                             onPressed: () {
                               controller.checklogin();
+                              Get.toNamed(Routes.BOTTOM_NAVBAR);
                             },
                           ),
                         ),

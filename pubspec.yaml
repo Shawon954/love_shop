@@ -41,6 +41,7 @@ dependencies:
   google_fonts: ^6.1.0
   intro_screen_onboarding_flutter: ^1.0.0
   lottie: ^2.7.0
+  salomon_bottom_bar: ^3.3.2
 
 dev_dependencies:
   flutter_test:
@@ -70,6 +71,7 @@ flutter:
      - assets/lottie/
      - assets/onbording/
      - assets/login_icon/
+     - assets/navbar_icon/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

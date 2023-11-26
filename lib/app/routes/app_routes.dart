@@ -7,6 +7,11 @@ abstract class Routes {
   static const onbording = _Paths.onbording;
   static const login = _Paths.login;
   static const signup = _Paths.signup;
+  static const BOTTOM_NAVBAR = _Paths.BOTTOM_NAVBAR;
+  static const homepage = _Paths.homepage;
+  static const cartpage = _Paths.cartpage;
+  static const favioratpage = _Paths.favioratpage;
+  static const userprofile = _Paths.userprofile;
 }
 
 abstract class _Paths {
@@ -15,4 +20,9 @@ abstract class _Paths {
   static const onbording = '/onbording';
   static const login = '/login';
   static const signup = '/signup';
+  static const BOTTOM_NAVBAR = '/bottom-navbar';
+  static const homepage = '/homepage';
+  static const cartpage = '/cartpage';
+  static const favioratpage = '/favioratpage';
+  static const userprofile = '/userprofile';
 }
