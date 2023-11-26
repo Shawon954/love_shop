@@ -47,6 +47,7 @@ dependencies:
   firebase_core: ^2.23.0
   cloud_firestore: ^4.13.2
   firebase_messaging: ^14.7.5
+  getwidget: ^4.0.0
 
 dev_dependencies:
   flutter_test:

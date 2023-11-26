@@ -6,9 +6,10 @@ import 'package:love_shop/app/modules/splash/bindings/splash_binding.dart';
 import 'package:love_shop/app/routes/app_pages.dart';
 
 Future<void> main() async {
-  await Firebase.initializeApp();
+
   WidgetsFlutterBinding.ensureInitialized();
   await ScreenUtil.ensureScreenSize();
+
 
   runApp(ScreenUtilInit(
     minTextAdapt: true,
