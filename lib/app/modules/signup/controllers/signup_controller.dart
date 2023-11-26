@@ -93,4 +93,7 @@ class SignupController extends GetxController {
     ispassword.value = !ispassword.value;
   }
 
+
+
+
 }

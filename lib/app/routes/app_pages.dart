@@ -18,6 +18,7 @@ import '../modules/splash/bindings/splash_binding.dart';
 import '../modules/splash/views/splash_view.dart';
 import '../modules/userprofile/bindings/userprofile_binding.dart';
 import '../modules/userprofile/views/userprofile_view.dart';
+import '../widget/unknown/unknown.dart';
 
 part 'app_routes.dart';
 
@@ -26,7 +27,13 @@ class AppPages {
 
   static const initial = "/splash";
 
+  static const Unknownpage = '/not_found';
+
   static final routes = [
+     GetPage(name: Unknownpage,
+         page:()=> Unknown()
+     ),
+
     GetPage(
       name: _Paths.splash,
       page: () => SplashView(),
