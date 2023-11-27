@@ -48,6 +48,7 @@ dependencies:
   cloud_firestore: ^4.13.2
   firebase_messaging: ^14.7.5
   getwidget: ^4.0.0
+  anim_search_bar: ^2.0.3
 
 dev_dependencies:
   flutter_test:
