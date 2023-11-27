@@ -12,6 +12,7 @@ abstract class Routes {
   static const cartpage = _Paths.cartpage;
   static const favioratpage = _Paths.favioratpage;
   static const userprofile = _Paths.userprofile;
+  static const details = _Paths.details;
 }
 
 abstract class _Paths {
@@ -25,4 +26,5 @@ abstract class _Paths {
   static const cartpage = '/cartpage';
   static const favioratpage = '/favioratpage';
   static const userprofile = '/userprofile';
+  static const details = '/details';
 }

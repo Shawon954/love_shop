@@ -4,6 +4,8 @@ import '../modules/bottom_navbar/bindings/bottom_navbar_binding.dart';
 import '../modules/bottom_navbar/views/bottom_navbar_view.dart';
 import '../modules/cartpage/bindings/cartpage_binding.dart';
 import '../modules/cartpage/views/cartpage_view.dart';
+import '../modules/details/bindings/details_binding.dart';
+import '../modules/details/views/details_view.dart';
 import '../modules/favioratpage/bindings/favioratpage_binding.dart';
 import '../modules/favioratpage/views/favioratpage_view.dart';
 import '../modules/homepage/bindings/homepage_binding.dart';
@@ -30,10 +32,7 @@ class AppPages {
   static const Unknownpage = '/not_found';
 
   static final routes = [
-     GetPage(name: Unknownpage,
-         page:()=> Unknown()
-     ),
-
+    GetPage(name: Unknownpage, page: () => Unknown()),
     GetPage(
       name: _Paths.splash,
       page: () => SplashView(),
@@ -56,28 +55,33 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.BOTTOM_NAVBAR,
-      page: () => const BottomNavbarView(),
+      page: () => BottomNavbarView(),
       binding: BottomNavbarBinding(),
     ),
     GetPage(
       name: _Paths.homepage,
-      page: () => const HomepageView(),
+      page: () => HomepageView(),
       binding: HomepageBinding(),
     ),
     GetPage(
       name: _Paths.cartpage,
-      page: () => const CartpageView(),
+      page: () => CartpageView(),
       binding: CartpageBinding(),
     ),
     GetPage(
       name: _Paths.favioratpage,
-      page: () => const FavioratpageView(),
+      page: () => FavioratpageView(),
       binding: FavioratpageBinding(),
     ),
     GetPage(
       name: _Paths.userprofile,
-      page: () => const UserprofileView(),
+      page: () => UserprofileView(),
       binding: UserprofileBinding(),
+    ),
+    GetPage(
+      name: _Paths.details,
+      page: () =>  DetailsView(),
+      binding: DetailsBinding(),
     ),
   ];
 }
