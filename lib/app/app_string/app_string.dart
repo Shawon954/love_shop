@@ -17,6 +17,9 @@ class AppString{
    static const username = "User Name";
    static const phonenumber = "Phone number";
 
+   static const Tshart = "TShaet 526";
+   static const shart = "Shaet 581";
+
 
 
 
