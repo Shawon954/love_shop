@@ -5,6 +5,7 @@ class AppImage{
   static const splashimage = "assets/splash/splash.png";
   static const loginicon = "assets/login_icon";
   static const bottom_navbar = "assets/navbar_icon";
+  static const shart= "assets/lottie/sh2.png";
 
 
   static const facebook_icon = "${loginicon}/facebook.png";
